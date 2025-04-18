@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItogActivity">
+
+    <EditText
+        android:id="@+id/ans19"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="76dp"
+        android:ems="10"
+        android:hint="6x+3=21"
+        android:inputType="text"
+        android:textColorHint="#090909"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintVertical_bias="0.886" />
+
+    <EditText
+        android:id="@+id/ans10"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="592dp"
+        android:ems="10"
+        android:hint="1.5∗4.2="
+        android:inputType="text"
+        android:textColorHint="#090909"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <EditText
+        android:id="@+id/ans11"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="544dp"
+        android:ems="10"
+        android:hint="−7+5="
+        android:inputType="text"
+        android:textColorHint="#090909"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <EditText
+        android:id="@+id/ans12"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="496dp"
+        android:ems="10"
+        android:hint="−10−4="
+        android:inputType="text"
+        android:textColorHint="#090909"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <EditText
+        android:id="@+id/ans13"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="448dp"
+        android:ems="10"
+        android:hint="−3∗(−6)="
+        android:inputType="text"
+        android:textColorHint="#090909"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <EditText
+        android:id="@+id/ans14"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="400dp"
+        android:ems="10"
+        android:hint="3 𝑥 + 4 = 13 "
+        android:inputType="text"
+        android:textColorHint="#090909"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.937"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <EditText
+        android:id="@+id/ans15"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="352dp"
+        android:ems="10"
+        android:hint="5x−2=3"
+        android:inputType="text"
+        android:textColorHint="#090909"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <EditText
+        android:id="@+id/ans16"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="304dp"
+        android:ems="10"
+        android:hint="2x+x=6*3"
+        android:inputType="text"
+        android:textColorHint="#090909"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <EditText
+        android:id="@+id/ans17"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="256dp"
+        android:ems="10"
+        android:hint="4x−8=12"
+        android:inputType="text"
+        android:textColorHint="#090909"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.937"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <EditText
+        android:id="@+id/ans18"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="208dp"
+        android:ems="10"
+        android:hint="2x+3=7"
+        android:inputType="text"
+        android:textColorHint="#090909"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <EditText
+        android:id="@+id/ans6"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="352dp"
+        android:ems="10"
+        android:hint="3/4−1/8="
+        android:inputType="text"
+        android:textColorHint="#090909"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <EditText
+        android:id="@+id/ans7"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="304dp"
+        android:ems="10"
+        android:hint="2/5∗3/7="
+        android:inputType="text"
+        android:textColorHint="#090909"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <EditText
+        android:id="@+id/ans8"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="256dp"
+        android:ems="10"
+        android:hint="4.5+2.3="
+        android:inputType="text"
+        android:textColorHint="#090909"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <EditText
+        android:id="@+id/ans9"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="208dp"
+        android:ems="10"
+        android:hint="9.6−3.1="
+        android:inputType="text"
+        android:textColorHint="#090909"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <EditText
+        android:id="@+id/ans5"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="400dp"
+        android:ems="10"
+        android:hint="2/3+1/3="
+        android:inputType="text"
+        android:textColorHint="#090909"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <EditText
+        android:id="@+id/ans4"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="448dp"
+        android:ems="10"
+        android:hint="81 / 9 = "
+        android:inputType="text"
+        android:textColorHint="#090909"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <EditText
+        android:id="@+id/ans1"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="592dp"
+        android:ems="10"
+        android:hint="14∗17="
+        android:inputType="text"
+        android:textColorHint="#090909"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <EditText
+        android:id="@+id/ans2"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="400dp"
+        android:ems="10"
+        android:hint="23∗19="
+        android:inputType="text"
+        android:textColorHint="#090909"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ans1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/ans3"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="88dp"
+        android:ems="10"
+        android:hint="144/12="
+        android:inputType="text"
+        android:textColorHint="#090909"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ans2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/finishApp"
+        android:layout_width="261dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="36dp"
+        android:text="Завершить"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="Ты сможешь"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.095"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.033"
+        app:layout_constraintWidth_percent="0.6" />
+
+    <TextView
+        android:id="@+id/backItog"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:text="На главную"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/finishApp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
