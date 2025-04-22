@@ -258,7 +258,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="56dp"
-        android:text="Когда вы будете готовы здесь появится итоговый тест)"
+        android:text="Когда вы будете готовы сдесь появится итоговый тест)"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
