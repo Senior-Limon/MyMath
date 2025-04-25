@@ -2,6 +2,7 @@ package com.example.mymathwithggaek
 
 import android.content.Intent
 import android.graphics.Color
+import android.net.Uri
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -39,6 +40,7 @@ class GLActivity : AppCompatActivity() {
         val info = findViewById<ImageView>(R.id.info)
         val delet = findViewById<ImageView>(R.id.delete)
         val TextView= findViewById<TextView>(R.id.textView13)
+        val sslk = findViewById<TextView>(R.id.textView9)
 
 
 
@@ -174,7 +176,6 @@ class GLActivity : AppCompatActivity() {
 
 
 
-
 //отображение имени и уровня
         val UserName = sharedPreferences.getString("name", "User1")
         textV7.text = UserName
@@ -197,6 +198,14 @@ class GLActivity : AppCompatActivity() {
 
         }
 
+//делаем текст подчеркнутым
+        sslk.paint.isUnderlineText = true
+
+//создаем переход на сайт при нажатии на текст с ггаэком
+        sslk.setOnClickListener {
+            val intentSSil = Intent(Intent.ACTION_VIEW, Uri.parse("https://ggaek.by/"))
+            startActivity(intentSSil)
+        }
 
 
 
