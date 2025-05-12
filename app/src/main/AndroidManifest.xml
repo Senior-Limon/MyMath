@@ -37,13 +37,13 @@
             android:name=".Les2Activity"
             android:exported="false" />
         <activity
-            android:name=".GLActivity"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".Les1Activity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".GLActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

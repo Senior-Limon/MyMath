@@ -1,9 +1,11 @@
 package com.example.mymathwithggaek
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -26,7 +28,7 @@ class MainActivity : AppCompatActivity() {
 
         val userData:EditText = findViewById(R.id.editText)
         val button:Button = findViewById(R.id.button)
-
+        val sslk: TextView = findViewById(R.id.textViewss)
 
 
         //        нужно для работы с инфой и последующего обращения по ключу
@@ -39,20 +41,7 @@ class MainActivity : AppCompatActivity() {
             button.text = "переименовать"
         }
 
-        //        создание интента для перехода на другую старницу
-        val intent = Intent(this, GLActivity::class.java)
-
-
-
-
-
-//    для работы с данными    val sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE)
-//    вызов данных по ключу   val value = sharedPreferences.getString("name", "Ошибка") name - ключ
-
-        val value = sharedPreferences.getString("name", "")
-        if (value != "")
-            startActivity(intent)
-
+//        обработка нажатия на кнопку войти\переименовать
         button.setOnClickListener {
             val text = userData.text.toString().trim()
             if(text != ""){
@@ -62,18 +51,20 @@ class MainActivity : AppCompatActivity() {
                 editorName.putString("name", text)
                 editorName.apply()
 
+                val intent = Intent(this, GLActivity::class.java)
                 startActivity(intent)
-            }
+                }
 
             else {
 
                 Toast.makeText(this, "Вы ничего не ввели!!!", Toast.LENGTH_SHORT).show()
-            }
-
-
-
+                }
 
         }
-
+        //создаем переход на сайт при нажатии на текст с ггаэком
+        sslk.setOnClickListener {
+            val intentSSil = Intent(Intent.ACTION_VIEW, Uri.parse("https://ggaek.by/"))
+            startActivity(intentSSil)
+            }
     }
 }

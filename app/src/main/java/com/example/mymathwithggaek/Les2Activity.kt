@@ -56,7 +56,7 @@ class Les2Activity : AppCompatActivity() {
                     val editionlevel = sharedPreferences.edit()
                     editionlevel.putInt("Level", newLevel)
                     editionlevel.apply()
-//проверка на то проходили ли этот урок
+//записываем данные для будующей проверки на то проходили ли этот урок
                     val TroobleShootL2 = sharedPreferences.edit()
                     TroobleShootL2.putString("TroobleL2", "0")
                     TroobleShootL2.apply()
@@ -64,16 +64,18 @@ class Les2Activity : AppCompatActivity() {
 //старутем другую страницу
                     startActivity(intent)
                 }
+//  вывод сообщения о том что не все ответы верны
                 else {
                     Toast.makeText(this, "Не все ответы верны(", Toast.LENGTH_SHORT).show()
                 }
             }
+//            вывод сообщения о том что этот урок уже проходили
             else {
                 Toast.makeText(this, "Вы это уже проходили", Toast.LENGTH_SHORT).show()
                 startActivity(intent)
             }
         }
-//
+//обработка нжатия кнопки на главную
         backl2.setOnClickListener {
             startActivity(intent)
         }

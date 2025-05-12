@@ -25,7 +25,7 @@ class GLActivity : AppCompatActivity() {
             insets
         }
 
-        val sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE)
+
         val textV7 = findViewById<TextView>(R.id.textV7)
         val LevelV = findViewById<TextView>(R.id.Level)
         val editName = findViewById<ImageView>(R.id.imageView)
@@ -41,6 +41,21 @@ class GLActivity : AppCompatActivity() {
         val delet = findViewById<ImageView>(R.id.delete)
         val TextView= findViewById<TextView>(R.id.textView13)
         val sslk = findViewById<TextView>(R.id.textView9)
+
+        val sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE)
+
+
+//        алгорит перехода на страницу регистрации если пользователь зашел впервые
+        //        создание интента для перехода на другую старницу
+        val intent = Intent(this, MainActivity::class.java)
+//    для работы с данными    val sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE)
+//    вызов данных по ключу   val value = sharedPreferences.getString("name", "Ошибка") name - ключ
+
+        val value = sharedPreferences.getString("name", "")
+        if (value == "")
+            startActivity(intent)
+
+
 
 
 
@@ -188,12 +203,12 @@ class GLActivity : AppCompatActivity() {
                 LevelV.text = "Уровень: $UserLevel, Ты почти у цели"
                 ButIt.visibility = View.VISIBLE
                 TextView.visibility = View.INVISIBLE
-            }
+                }
             UserLevel in 9..10 -> {
                 LevelV.text = "Уровень: $UserLevel (Максимальный)"
                 ButIt.visibility = View.VISIBLE
                 TextView.visibility = View.INVISIBLE
-            }
+                }
             else -> LevelV.text = "Уровень: $UserLevel"
 
         }

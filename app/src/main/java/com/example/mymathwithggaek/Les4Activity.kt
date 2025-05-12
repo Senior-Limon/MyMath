@@ -68,10 +68,12 @@ class Les4Activity : AppCompatActivity() {
 //старутем другую страницу
                     startActivity(intent)
                 }
+                //  вывод сообщения о том что не все ответы верны
                 else {
                     Toast.makeText(this, "Не все ответы верны(", Toast.LENGTH_SHORT).show()
                 }
             }
+//            вывод сообщения о том что этот урок уже проходили
             else {
                 Toast.makeText(this, "Вы это уже проходили", Toast.LENGTH_SHORT).show()
                 startActivity(intent)
