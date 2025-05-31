@@ -114,10 +114,13 @@
 
     <TextView
         android:id="@+id/textV1"
-        android:layout_width="417dp"
-        android:layout_height="77dp"
-        android:text="        Список уроков"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="1"
+        app:layout_constraintHeight_percent="0.08"
+        android:text="Список уроков"
         android:textColor="#0D0C0C"
+        android:gravity="center"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
