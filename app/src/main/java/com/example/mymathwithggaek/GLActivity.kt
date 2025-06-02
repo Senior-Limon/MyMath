@@ -39,7 +39,6 @@ class GLActivity : AppCompatActivity() {
         val ButIt = findViewById<Button>(R.id.buttonItog)
         val info = findViewById<ImageView>(R.id.info)
         val delet = findViewById<ImageView>(R.id.delete)
-        val TextView= findViewById<TextView>(R.id.textView13)
         val sslk = findViewById<TextView>(R.id.textView9)
 
         val sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE)
@@ -179,8 +178,12 @@ class GLActivity : AppCompatActivity() {
 
         ButIt.setOnClickListener {
 //запуск итогового теста
-            val intentItog = Intent(this, ItogActivity::class.java)
-            startActivity(intentItog)
+            val UserLevel = sharedPreferences.getInt("Level", 0)
+            if (UserLevel == 7) {
+                val intentItog = Intent(this, ItogActivity::class.java)
+                startActivity(intentItog)
+            }
+            else Toast.makeText(this, "сначала пройти остальные уроки!",Toast.LENGTH_LONG).show()
         }
 
         delet.setOnClickListener {
@@ -201,13 +204,9 @@ class GLActivity : AppCompatActivity() {
             UserLevel in 5..6 -> LevelV.text = "Уровень: $UserLevel, Ты почти у цели"
             UserLevel in 7..8 -> {
                 LevelV.text = "Уровень: $UserLevel, Ты почти у цели"
-                ButIt.visibility = View.VISIBLE
-                TextView.visibility = View.INVISIBLE
                 }
             UserLevel in 9..10 -> {
                 LevelV.text = "Уровень: $UserLevel (Максимальный)"
-                ButIt.visibility = View.VISIBLE
-                TextView.visibility = View.INVISIBLE
                 }
             else -> LevelV.text = "Уровень: $UserLevel"
 
