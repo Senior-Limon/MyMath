@@ -180,7 +180,7 @@ class GLActivity : AppCompatActivity() {
         ButIt.setOnClickListener {
 //запуск итогового теста
             val UserLevel = sharedPreferences.getInt("Level", 0)
-            if (UserLevel == 7) {
+            if (UserLevel >= 7) {
                 val intentItog = Intent(this, ItogActivity::class.java)
                 startActivity(intentItog)
             }

@@ -49,7 +49,7 @@ class ItogActivity : AppCompatActivity() {
         val mediaPlayer = MediaPlayer.create(this, R.raw.it)
         val sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE)
 
-        val ans : Int = 0
+        var ans : Int = 0
 
         val intent = Intent(this, GLActivity::class.java)
 //для проверки на то проходили этот уровень или нет(обращаемся по ключу и проверяем) по нажатию кнопки
@@ -58,8 +58,9 @@ class ItogActivity : AppCompatActivity() {
             if (Fix != "0") {
 
 //                отслеживание ответов
+
                 if (Ans1.text.toString().trim() == "238") {
-                    val ans = ans +1
+                    ans += 1
                 }
                 else {
                     Ans1.setTextColor(Color.RED)
@@ -67,7 +68,7 @@ class ItogActivity : AppCompatActivity() {
 
 
                 if (Ans2.text.toString().trim() == "437") {
-                    val ans = ans +1
+                    ans += 1
                 }
                 else {
                     Ans2.setTextColor(Color.RED)
@@ -75,7 +76,7 @@ class ItogActivity : AppCompatActivity() {
 
 
                 if (Ans3.text.toString().trim() == "12") {
-                    val ans = ans +1
+                    ans += 1
                 }
                 else {
                     Ans3.setTextColor(Color.RED)
@@ -83,14 +84,14 @@ class ItogActivity : AppCompatActivity() {
 
 
                 if (Ans4.text.toString().trim() == "9") {
-                    val ans = ans +1
+                    ans += 1
                 }
                 else {
                     Ans9.setTextColor(Color.RED)
                 }
 
                 if (Ans5.text.toString().trim() == "1" || Ans5.text.toString().trim() == "3/3") {
-                    val ans = ans +1
+                    ans += 1
                 }
                 else {
                     Ans5.setTextColor(Color.RED)
@@ -98,7 +99,7 @@ class ItogActivity : AppCompatActivity() {
 
 
                 if (Ans6.text.toString().trim() == "5/8") {
-                    val ans = ans +1
+                    ans += 1
                 }
                 else {
                     Ans6.setTextColor(Color.RED)
@@ -106,7 +107,7 @@ class ItogActivity : AppCompatActivity() {
 
 
                 if (Ans7.text.toString().trim() == "6/35") {
-                    val ans = ans +1
+                    ans += 1
                 }
                 else {
                     Ans7.setTextColor(Color.RED)
@@ -114,14 +115,14 @@ class ItogActivity : AppCompatActivity() {
 
 
                 if (Ans8.text.toString().trim() == "6.8" || Ans8.text.toString().trim() == "6,8") {
-                    val ans = ans +1
+                    ans += 1
                 }
                 else {
                     Ans8.setTextColor(Color.RED)
                 }
 
                 if (Ans9.text.toString().trim() == "6.5" || Ans9.text.toString().trim() == "6,5") {
-                    val ans = ans +1
+                    ans += 1
                 }
                 else {
                     Ans9.setTextColor(Color.RED)
@@ -129,7 +130,7 @@ class ItogActivity : AppCompatActivity() {
 
 
                 if (Ans10.text.toString().trim() == "6.3" || Ans10.text.toString().trim() == "6,3") {
-                    val ans = ans +1
+                    ans += 1
                 }
                 else {
                     Ans10.setTextColor(Color.RED)
@@ -137,14 +138,14 @@ class ItogActivity : AppCompatActivity() {
 
 
                 if (Ans11.text.toString().trim() == "-2") {
-                    val ans = ans +1
+                    ans += 1
                 }
                 else {
                     Ans11.setTextColor(Color.RED)
                 }
 
                 if (Ans12.text.toString().trim() == "-14") {
-                    val ans = ans +1
+                    ans += 1
                 }
                 else {
                     Ans12.setTextColor(Color.RED)
@@ -152,7 +153,7 @@ class ItogActivity : AppCompatActivity() {
 
 
                 if (Ans13.text.toString().trim() == "18") {
-                    val ans = ans +1
+                    ans += 1
                 }
                 else {
                     Ans13.setTextColor(Color.RED)
@@ -160,7 +161,7 @@ class ItogActivity : AppCompatActivity() {
 
 
                 if (Ans14.text.toString().trim() == "3") {
-                    val ans = ans +1
+                    ans += 1
                 }
                 else {
                     Ans14.setTextColor(Color.RED)
@@ -168,14 +169,14 @@ class ItogActivity : AppCompatActivity() {
 
 
                 if (Ans15.text.toString().trim() == "1") {
-                    val ans = ans +1
+                    ans += 1
                 }
                 else {
                     Ans15.setTextColor(Color.RED)
                 }
 
                 if (Ans16.text.toString().trim() == "6") {
-                    val ans = ans +1
+                    ans += 1
                 }
                 else {
                     Ans16.setTextColor(Color.RED)
@@ -183,7 +184,7 @@ class ItogActivity : AppCompatActivity() {
 
 
                 if (Ans17.text.toString().trim() == "5") {
-                    val ans = ans +1
+                    ans += 1
                 }
                 else {
                     Ans17.setTextColor(Color.RED)
@@ -191,7 +192,7 @@ class ItogActivity : AppCompatActivity() {
 
 
                 if (Ans18.text.toString().trim() == "3") {
-                    val ans = ans +1
+                    ans += 1
                 }
                 else {
                     Ans18.setTextColor(Color.RED)
@@ -199,7 +200,7 @@ class ItogActivity : AppCompatActivity() {
 
 
                 if (Ans19.text.toString().trim() == "3") {
-                    val ans = ans +1
+                    ans += 1
                 }
                 else {
                     Ans19.setTextColor(Color.RED)
