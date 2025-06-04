@@ -1,6 +1,7 @@
 package com.example.mymathwithggaek
 
 import android.content.Intent
+import android.media.MediaPlayer
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -61,12 +62,17 @@ class Les7Activity : AppCompatActivity() {
                     TroobleShootL7.putString("TroobleL7", "0")
                     TroobleShootL7.apply()
 
-//старутем другую страницу
+//старутем другую страницу + sound
+                    val mediaPlayer = MediaPlayer.create(this, R.raw.tr)
+                    mediaPlayer.start()
                     startActivity(intent)
                 }
                 //  вывод сообщения о том что не все ответы верны
                 else {
                     Toast.makeText(this, "Не все ответы верны(", Toast.LENGTH_SHORT).show()
+                    // sound
+                    val mediaPlayer = MediaPlayer.create(this, R.raw.fl)
+                    mediaPlayer.start()
                 }
             }
 //            вывод сообщения о том что этот урок уже проходили

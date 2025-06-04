@@ -1,6 +1,7 @@
 package com.example.mymathwithggaek
 
 import android.content.Intent
+import android.media.MediaPlayer
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
@@ -47,7 +48,11 @@ class Les1Activity : AppCompatActivity() {
 
             }
 
+
+            //старутем другую страницу + sound
             val intent = Intent(this, GLActivity::class.java)
+            val mediaPlayer = MediaPlayer.create(this, R.raw.tr)
+            mediaPlayer.start()
             startActivity(intent)
 
         }

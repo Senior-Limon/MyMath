@@ -1,6 +1,7 @@
 package com.example.mymathwithggaek
 
 import android.content.Intent
+import android.media.MediaPlayer
 import android.net.Uri
 import android.os.Bundle
 import android.widget.Button
@@ -29,6 +30,7 @@ class MainActivity : AppCompatActivity() {
         val userData:EditText = findViewById(R.id.editText)
         val button:Button = findViewById(R.id.button)
         val sslk: TextView = findViewById(R.id.textViewss)
+        val mediaPlayer = MediaPlayer.create(this, R.raw.oprivet)
 
 
         //        нужно для работы с инфой и последующего обращения по ключу
@@ -52,6 +54,7 @@ class MainActivity : AppCompatActivity() {
                 editorName.apply()
 
                 val intent = Intent(this, GLActivity::class.java)
+                mediaPlayer.start()
                 startActivity(intent)
                 }
 

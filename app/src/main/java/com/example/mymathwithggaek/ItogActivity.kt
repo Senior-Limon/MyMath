@@ -1,6 +1,8 @@
 package com.example.mymathwithggaek
 
 import android.content.Intent
+import android.graphics.Color
+import android.media.MediaPlayer
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -11,6 +13,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.core.widget.doOnTextChanged
 
 class ItogActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -43,39 +46,166 @@ class ItogActivity : AppCompatActivity() {
         val Ans18: EditText = findViewById(R.id.ans18)
         val Ans19: EditText = findViewById(R.id.ans19)
         val back : TextView = findViewById(R.id.backItog)
-
+        val mediaPlayer = MediaPlayer.create(this, R.raw.it)
         val sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE)
+
+        val ans : Int = 0
 
         val intent = Intent(this, GLActivity::class.java)
 //для проверки на то проходили этот уровень или нет(обращаемся по ключу и проверяем) по нажатию кнопки
         finish.setOnClickListener {
             val Fix = sharedPreferences.getString("TroobleIt", "")
             if (Fix != "0") {
-                if (
-                    (Ans1.text.toString().trim() == "238") &&
-                    (Ans2.text.toString().trim() == "437")  &&
-                    (Ans3.text.toString().trim() == "12") &&
-                    (Ans4.text.toString().trim() == "9") &&
-                    ((Ans5.text.toString().trim() == "1") ||
-                            (Ans5.text.toString().trim() == "3/3"))&&
-                    (Ans6.text.toString().trim() == "5/8") &&
-                    (Ans7.text.toString().trim() == "6/35")&&
-                    ((Ans8.text.toString().trim() == "6.8")||
-                        (Ans8.text.toString().trim() == "6,8"))&&
-                    ((Ans9.text.toString().trim() == "6.5")||
-                            (Ans9.text.toString().trim() == "6,5"))&&
-                    ((Ans10.text.toString().trim() == "6.3")||
-                            (Ans10.text.toString().trim() == "6,3"))&&
-                    (Ans11.text.toString().trim() == "-2")&&
-                    (Ans12.text.toString().trim() == "-14")&&
-                    (Ans13.text.toString().trim() == "18")&&
-                    (Ans14.text.toString().trim() == "3")&&
-                    (Ans15.text.toString().trim() == "1")&&
-                    (Ans16.text.toString().trim() == "6")&&
-                    (Ans17.text.toString().trim() == "5")&&
-                    (Ans18.text.toString().trim() == "3")&&
-                    (Ans19.text.toString().trim() == "3")
-                ) {
+
+//                отслеживание ответов
+                if (Ans1.text.toString().trim() == "238") {
+                    val ans = ans +1
+                }
+                else {
+                    Ans1.setTextColor(Color.RED)
+                }
+
+
+                if (Ans2.text.toString().trim() == "437") {
+                    val ans = ans +1
+                }
+                else {
+                    Ans2.setTextColor(Color.RED)
+                }
+
+
+                if (Ans3.text.toString().trim() == "12") {
+                    val ans = ans +1
+                }
+                else {
+                    Ans3.setTextColor(Color.RED)
+                }
+
+
+                if (Ans4.text.toString().trim() == "9") {
+                    val ans = ans +1
+                }
+                else {
+                    Ans9.setTextColor(Color.RED)
+                }
+
+                if (Ans5.text.toString().trim() == "1" || Ans5.text.toString().trim() == "3/3") {
+                    val ans = ans +1
+                }
+                else {
+                    Ans5.setTextColor(Color.RED)
+                }
+
+
+                if (Ans6.text.toString().trim() == "5/8") {
+                    val ans = ans +1
+                }
+                else {
+                    Ans6.setTextColor(Color.RED)
+                }
+
+
+                if (Ans7.text.toString().trim() == "6/35") {
+                    val ans = ans +1
+                }
+                else {
+                    Ans7.setTextColor(Color.RED)
+                }
+
+
+                if (Ans8.text.toString().trim() == "6.8" || Ans8.text.toString().trim() == "6,8") {
+                    val ans = ans +1
+                }
+                else {
+                    Ans8.setTextColor(Color.RED)
+                }
+
+                if (Ans9.text.toString().trim() == "6.5" || Ans9.text.toString().trim() == "6,5") {
+                    val ans = ans +1
+                }
+                else {
+                    Ans9.setTextColor(Color.RED)
+                }
+
+
+                if (Ans10.text.toString().trim() == "6.3" || Ans10.text.toString().trim() == "6,3") {
+                    val ans = ans +1
+                }
+                else {
+                    Ans10.setTextColor(Color.RED)
+                }
+
+
+                if (Ans11.text.toString().trim() == "-2") {
+                    val ans = ans +1
+                }
+                else {
+                    Ans11.setTextColor(Color.RED)
+                }
+
+                if (Ans12.text.toString().trim() == "-14") {
+                    val ans = ans +1
+                }
+                else {
+                    Ans12.setTextColor(Color.RED)
+                }
+
+
+                if (Ans13.text.toString().trim() == "18") {
+                    val ans = ans +1
+                }
+                else {
+                    Ans13.setTextColor(Color.RED)
+                }
+
+
+                if (Ans14.text.toString().trim() == "3") {
+                    val ans = ans +1
+                }
+                else {
+                    Ans14.setTextColor(Color.RED)
+                }
+
+
+                if (Ans15.text.toString().trim() == "1") {
+                    val ans = ans +1
+                }
+                else {
+                    Ans15.setTextColor(Color.RED)
+                }
+
+                if (Ans16.text.toString().trim() == "6") {
+                    val ans = ans +1
+                }
+                else {
+                    Ans16.setTextColor(Color.RED)
+                }
+
+
+                if (Ans17.text.toString().trim() == "5") {
+                    val ans = ans +1
+                }
+                else {
+                    Ans17.setTextColor(Color.RED)
+                }
+
+
+                if (Ans18.text.toString().trim() == "3") {
+                    val ans = ans +1
+                }
+                else {
+                    Ans18.setTextColor(Color.RED)
+                }
+
+
+                if (Ans19.text.toString().trim() == "3") {
+                    val ans = ans +1
+                }
+                else {
+                    Ans19.setTextColor(Color.RED)
+                }
+
+                if (ans > 15) {
                     Toast.makeText(this, "Ты молодец!!!", Toast.LENGTH_SHORT).show()
 //записываем 1 для изменения цвета в главной странице
                     val edition = sharedPreferences.edit()
@@ -92,11 +222,16 @@ class ItogActivity : AppCompatActivity() {
                     TroobleShootIt.putString("TroobleIt", "0")
                     TroobleShootIt.apply()
 
-//старутем другую страницу
+//старутем другую страницу + sound
+                    val mediaPlayer = MediaPlayer.create(this, R.raw.tr)
+                    mediaPlayer.start()
                     startActivity(intent)
                 }
                 else {
                     Toast.makeText(this, "Не все ответы верны( попробуй ещё раз", Toast.LENGTH_SHORT).show()
+                    // sound
+                    val mediaPlayer = MediaPlayer.create(this, R.raw.fl)
+                    mediaPlayer.start()
                 }
             }
             else {
@@ -104,6 +239,83 @@ class ItogActivity : AppCompatActivity() {
                 startActivity(intent)
             }
         }
+        // возвращение цвета при изменении
+        Ans1.doOnTextChanged {text, start, before, count ->
+            Ans1.setTextColor(Color.BLACK)
+        }
+
+        Ans2.doOnTextChanged {text, start, before, count ->
+            Ans2.setTextColor(Color.BLACK)
+        }
+
+        Ans3.doOnTextChanged {text, start, before, count ->
+            Ans3.setTextColor(Color.BLACK)
+        }
+
+        Ans4.doOnTextChanged {text, start, before, count ->
+            Ans4.setTextColor(Color.BLACK)
+        }
+
+        Ans5.doOnTextChanged {text, start, before, count ->
+            Ans5.setTextColor(Color.BLACK)
+        }
+
+        Ans6.doOnTextChanged {text, start, before, count ->
+            Ans6.setTextColor(Color.BLACK)
+        }
+
+        Ans7.doOnTextChanged {text, start, before, count ->
+            Ans7.setTextColor(Color.BLACK)
+        }
+
+        Ans8.doOnTextChanged {text, start, before, count ->
+            Ans8.setTextColor(Color.BLACK)
+        }
+
+        Ans9.doOnTextChanged {text, start, before, count ->
+            Ans9.setTextColor(Color.BLACK)
+        }
+
+        Ans10.doOnTextChanged {text, start, before, count ->
+            Ans10.setTextColor(Color.BLACK)
+        }
+
+        Ans11.doOnTextChanged {text, start, before, count ->
+            Ans11.setTextColor(Color.BLACK)
+        }
+
+        Ans12.doOnTextChanged {text, start, before, count ->
+            Ans12.setTextColor(Color.BLACK)
+        }
+
+        Ans13.doOnTextChanged {text, start, before, count ->
+            Ans13.setTextColor(Color.BLACK)
+        }
+        Ans14.doOnTextChanged {text, start, before, count ->
+            Ans14.setTextColor(Color.BLACK)
+        }
+
+        Ans15.doOnTextChanged {text, start, before, count ->
+            Ans15.setTextColor(Color.BLACK)
+        }
+
+        Ans16.doOnTextChanged {text, start, before, count ->
+            Ans16.setTextColor(Color.BLACK)
+        }
+
+        Ans17.doOnTextChanged {text, start, before, count ->
+            Ans17.setTextColor(Color.BLACK)
+        }
+
+        Ans18.doOnTextChanged {text, start, before, count ->
+            Ans18.setTextColor(Color.BLACK)
+        }
+
+        Ans19.doOnTextChanged {text, start, before, count ->
+            Ans19.setTextColor(Color.BLACK)
+        }
+//        конец
+
         back.setOnClickListener{
             startActivity(intent)
         }

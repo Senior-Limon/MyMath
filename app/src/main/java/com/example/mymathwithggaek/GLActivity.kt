@@ -2,6 +2,7 @@ package com.example.mymathwithggaek
 
 import android.content.Intent
 import android.graphics.Color
+import android.media.MediaPlayer
 import android.net.Uri
 import android.os.Bundle
 import android.view.View
@@ -183,7 +184,10 @@ class GLActivity : AppCompatActivity() {
                 val intentItog = Intent(this, ItogActivity::class.java)
                 startActivity(intentItog)
             }
-            else Toast.makeText(this, "сначала пройти остальные уроки!",Toast.LENGTH_LONG).show()
+            else {Toast.makeText(this, "сначала пройти остальные уроки!",Toast.LENGTH_LONG).show()
+            // sound
+            val mediaPlayer = MediaPlayer.create(this, R.raw.fl)
+            mediaPlayer.start()}
         }
 
         delet.setOnClickListener {
