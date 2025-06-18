@@ -61,7 +61,13 @@ class Les7Activity : AppCompatActivity() {
                     val TroobleShootL7 = sharedPreferences.edit()
                     TroobleShootL7.putString("TroobleL7", "0")
                     TroobleShootL7.apply()
-
+//увеличение попытки прохождения
+                    val Popit = sharedPreferences.getInt("StatistIt", 0)
+                    val Stat = Popit + 1
+                    val editionPop = sharedPreferences.edit()
+                    editionPop.putInt("StatistIt", Stat)
+                    editionPop.apply()
+//
 //старутем другую страницу + sound
                     val mediaPlayer = MediaPlayer.create(this, R.raw.tr)
                     mediaPlayer.start()
@@ -69,6 +75,13 @@ class Les7Activity : AppCompatActivity() {
                 }
                 //  вывод сообщения о том что не все ответы верны
                 else {
+//увеличение попытки прохождения
+                    val Popit = sharedPreferences.getInt("StatistIt", 0)
+                    val Stat = Popit + 1
+                    val editionPop = sharedPreferences.edit()
+                    editionPop.putInt("StatistIt", Stat)
+                    editionPop.apply()
+//
                     Toast.makeText(this, "Не все ответы верны(", Toast.LENGTH_SHORT).show()
                     // sound
                     val mediaPlayer = MediaPlayer.create(this, R.raw.fl)

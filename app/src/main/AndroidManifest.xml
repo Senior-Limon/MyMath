@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MyMathWithGgaek"
         tools:targetApi="31">
         <activity
+            android:name=".StatActivity"
+            android:exported="false" />
+        <activity
             android:name=".DelActivity"
             android:exported="false" />
         <activity

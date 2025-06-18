@@ -41,6 +41,7 @@ class GLActivity : AppCompatActivity() {
         val info = findViewById<ImageView>(R.id.info)
         val delet = findViewById<ImageView>(R.id.delete)
         val sslk = findViewById<TextView>(R.id.textView9)
+        val ButST = findViewById<Button>(R.id.buttonStatis)
 
         val sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE)
 
@@ -190,12 +191,18 @@ class GLActivity : AppCompatActivity() {
             mediaPlayer.start()}
         }
 
+
         delet.setOnClickListener {
-//запуск итогового теста
+//запуск cтраницы удаления
             val intentdel = Intent(this, DelActivity::class.java)
             startActivity(intentdel)
         }
 
+        ButST.setOnClickListener {
+//запуск cтраницы статистики
+            val intentS = Intent(this, StatActivity::class.java)
+            startActivity(intentS)
+        }
 
 
 //отображение имени и уровня

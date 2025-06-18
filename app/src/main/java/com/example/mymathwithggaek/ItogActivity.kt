@@ -222,6 +222,12 @@ class ItogActivity : AppCompatActivity() {
                     val TroobleShootIt = sharedPreferences.edit()
                     TroobleShootIt.putString("TroobleIt", "0")
                     TroobleShootIt.apply()
+//увеличение попытки прохождения
+                    val Popit = sharedPreferences.getInt("Statist", 0)
+                    val Stat = Popit + 1
+                    val editionPop = sharedPreferences.edit()
+                    editionPop.putInt("Statist", Stat)
+                    editionPop.apply()
 
 //старутем другую страницу + sound
                     val mediaPlayer = MediaPlayer.create(this, R.raw.tr)
@@ -229,6 +235,13 @@ class ItogActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
                 else {
+//увеличение попытки прохождения
+                    val Popit = sharedPreferences.getInt("Statist", 0)
+                    val Stat = Popit + 1
+                    val editionPop = sharedPreferences.edit()
+                    editionPop.putInt("Statist", Stat)
+                    editionPop.apply()
+//
                     Toast.makeText(this, "Не все ответы верны( попробуй ещё раз", Toast.LENGTH_SHORT).show()
                     // sound
                     val mediaPlayer = MediaPlayer.create(this, R.raw.fl)

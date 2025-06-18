@@ -68,7 +68,12 @@ class Les5Activity : AppCompatActivity() {
                     val TroobleShootL5 = sharedPreferences.edit()
                     TroobleShootL5.putString("TroobleL5", "0")
                     TroobleShootL5.apply()
-
+//увеличение попытки прохождения
+                    val Popit = sharedPreferences.getInt("StatistL5", 0)
+                    val Stat = Popit + 1
+                    val editionPop = sharedPreferences.edit()
+                    editionPop.putInt("StatistL5", Stat)
+                    editionPop.apply()
 //старутем другую страницу + sound
                     val mediaPlayer = MediaPlayer.create(this, R.raw.tr)
                     mediaPlayer.start()
@@ -76,6 +81,13 @@ class Les5Activity : AppCompatActivity() {
                 }
                 //  вывод сообщения о том что не все ответы верны
                 else {
+//увеличение попытки прохождения
+                    val Popit = sharedPreferences.getInt("StatistL5", 0)
+                    val Stat = Popit + 1
+                    val editionPop = sharedPreferences.edit()
+                    editionPop.putInt("StatistL5", Stat)
+                    editionPop.apply()
+//
                     Toast.makeText(this, "Не все ответы верны(", Toast.LENGTH_SHORT).show()
                     // sound
                     val mediaPlayer = MediaPlayer.create(this, R.raw.fl)
