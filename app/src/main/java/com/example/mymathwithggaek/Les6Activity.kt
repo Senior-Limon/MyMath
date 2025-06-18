@@ -57,7 +57,7 @@ class Les6Activity : AppCompatActivity() {
                     val editionlevel = sharedPreferences.edit()
                     editionlevel.putInt("Level", newLevel)
                     editionlevel.apply()
-//проверка на то проходили ли этот урок
+//для проверка на то проходили ли этот урок
                     val TroobleShootL6 = sharedPreferences.edit()
                     TroobleShootL6.putString("TroobleL6", "0")
                     TroobleShootL6.apply()
@@ -81,7 +81,7 @@ class Les6Activity : AppCompatActivity() {
                     val editionPop = sharedPreferences.edit()
                     editionPop.putInt("StatistL6", Stat)
                     editionPop.apply()
-//
+//вывод текста о том что не все ответы верны
                     Toast.makeText(this, "Не все ответы верны(", Toast.LENGTH_SHORT).show()
                     // sound
                     val mediaPlayer = MediaPlayer.create(this, R.raw.fl)

@@ -223,10 +223,10 @@ class ItogActivity : AppCompatActivity() {
                     TroobleShootIt.putString("TroobleIt", "0")
                     TroobleShootIt.apply()
 //увеличение попытки прохождения
-                    val Popit = sharedPreferences.getInt("Statist", 0)
+                    val Popit = sharedPreferences.getInt("StatistIt", 0)
                     val Stat = Popit + 1
                     val editionPop = sharedPreferences.edit()
-                    editionPop.putInt("Statist", Stat)
+                    editionPop.putInt("StatistIt", Stat)
                     editionPop.apply()
 
 //старутем другую страницу + sound
@@ -236,10 +236,10 @@ class ItogActivity : AppCompatActivity() {
                 }
                 else {
 //увеличение попытки прохождения
-                    val Popit = sharedPreferences.getInt("Statist", 0)
+                    val Popit = sharedPreferences.getInt("StatistIt", 0)
                     val Stat = Popit + 1
                     val editionPop = sharedPreferences.edit()
-                    editionPop.putInt("Statist", Stat)
+                    editionPop.putInt("StatistIt", Stat)
                     editionPop.apply()
 //
                     Toast.makeText(this, "Не все ответы верны( попробуй ещё раз", Toast.LENGTH_SHORT).show()

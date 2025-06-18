@@ -94,6 +94,37 @@ class DelActivity : AppCompatActivity() {
             val editorName = sharedPreferences.edit()
             editorName.putInt("Level", 0 )
             editorName.apply()
+
+//обнуляем попытки прохождения уроков 2.3.4.5.6.ит.
+            val editionPop2 = sharedPreferences.edit()
+            editionPop2.putInt("StatistL2", 0)
+            editionPop2.apply()
+
+            val editionPop3 = sharedPreferences.edit()
+            editionPop3.putInt("StatistL3", 0)
+            editionPop3.apply()
+
+            val editionPop4 = sharedPreferences.edit()
+            editionPop4.putInt("StatistL4", 0)
+            editionPop4.apply()
+
+            val editionPop5 = sharedPreferences.edit()
+            editionPop5.putInt("StatistL5", 0)
+            editionPop5.apply()
+
+            val editionPop6 = sharedPreferences.edit()
+            editionPop6.putInt("StatistL6", 0)
+            editionPop6.apply()
+
+            val editionPop7 = sharedPreferences.edit()
+            editionPop7.putInt("StatistL7", 0)
+            editionPop7.apply()
+
+            val editionPopIt = sharedPreferences.edit()
+            editionPopIt.putInt("StatistIt", 0)
+            editionPopIt.apply()
+
+
 //запускаем обновлённую главную страницу
             startActivity(intent)
         }

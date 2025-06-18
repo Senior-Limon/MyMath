@@ -35,25 +35,25 @@ class StatActivity : AppCompatActivity() {
         }
 
         val T1S = sharedPreferences.getInt("StatistL2", 0)
-        text1.text = "Попыток на уровень 1: $T1S"
+        text1.text = "Попыток на урок 1: $T1S"
 
         val T2S = sharedPreferences.getInt("StatistL3", 0)
-        text2.text = "Попыток на уровень 2: $T2S"
+        text2.text = "Попыток на урок 2: $T2S"
 
         val T3S = sharedPreferences.getInt("StatistL4", 0)
-        text3.text = "Попыток на уровень 3: $T3S"
+        text3.text = "Попыток на урок 3: $T3S"
 
         val T4S = sharedPreferences.getInt("StatistL5", 0)
-        text4.text = "Попыток на уровень 4: $T4S"
+        text4.text = "Попыток на урок 4: $T4S"
 
         val T5S = sharedPreferences.getInt("StatistL6", 0)
-        text5.text = "Попыток на уровень 5: $T5S"
+        text5.text = "Попыток на урок 5: $T5S"
 
         val T6S = sharedPreferences.getInt("StatistL7", 0)
-        text6.text = "Попыток на уровень 6: $T6S"
+        text6.text = "Попыток на урок 6: $T6S"
 
         val T8S = sharedPreferences.getInt("StatistIt", 0)
-        text7.text = "Попыток на итоговый тест: $T8S"
+        text7.text = "Попыток на итоговый урок: $T8S"
 
 
     }

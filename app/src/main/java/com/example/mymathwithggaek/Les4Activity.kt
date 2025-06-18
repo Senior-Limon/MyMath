@@ -61,7 +61,7 @@ class Les4Activity : AppCompatActivity() {
                     val editionlevel = sharedPreferences.edit()
                     editionlevel.putInt("Level", newLevel)
                     editionlevel.apply()
-//проверка на то проходили ли этот урок
+//для проверка на то проходили ли этот урок
                     val TroobleShootL4 = sharedPreferences.edit()
                     TroobleShootL4.putString("TroobleL4", "0")
                     TroobleShootL4.apply()
